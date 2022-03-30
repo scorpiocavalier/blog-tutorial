@@ -18,6 +18,9 @@ export default function Posts() {
   return (
     <main className="mx-auto max-w-4xl">
       <h1 className="my-6 border-b-2 text-center text-3xl">Posts</h1>
+      <Link to="admin" className="text-red-600 underline">
+        Admin
+      </Link>
       <ul>
         {posts.map((post) => (
           <li key={post.slug}>
